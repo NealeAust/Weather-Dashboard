@@ -1,0 +1,33 @@
+.header {
+    font-size: 45px;
+    color: white;
+    text-align: center
+}
+
+.search{
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.new-input {
+    width: 350px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.btn{
+
+    width: 355px;
+    height: 40px;
+    background: #5e74d7;
+    margin-left:6px;
+    font-size: 20px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.card{
+height:100%;
+width:100%;
+}
