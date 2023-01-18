@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Weather Dashboard</title>
-  <link rel="icon" href="./assets/image/scheduleLogo.png" type="image/x-icon">
+  
 </head>
 
 <body>
@@ -22,40 +22,42 @@
     <nav class="navbar navbar-light" style="background-color:#242490;">
       <h1 class="header mx-auto">Weather Dashboard</h1>
     </nav>
-        
+
     <section>
       <div class="row">
-        <div class="col-5">
+        <div class="col-3">
           <div class="search m-2">Search for a City:</div>
-          <div class="input-group m-2 ">
-            <div class="border border-dark"</div>
-              <input type="text" id="cityName" class="form-control new-input  ">
-    </section>
-    <button class="btn btn-primary" type="button" id="submit">Search</button>
-  </div>
+          <div class="input-group m-2">
+            <div class="border border-dark">
+              <input type="text" id="cityName" class="form-control new-input" />
+            </div>
+          </div>
+            <div>
+              <button class="btn btn-primary m-2" type="button" id="submit">Search</button>
+            </div>
+            <div class="list-group history">
+            </div>
 
-  <div class="list-group history">
-  </div>
- 
-
-  <div class="col-6">
-      <div class="row p-2">
-      <div class="card border border-dark">
-      <div class="card-body"</div>
-            
-        </div>  
         </div>
+        <div class="col-8 output">
+          <div class="row p-8 mt-3">
+            <div class="card border border-dark outputBox"></div>
+            <!-- <div class= card-body"></div> -->
+          </div>
+          <h5>5-Day Forecast</h5> 
+      </section>
 
-        <div class ="row">
-          <h5>5-Day Forecast:</h5>
-       </div>
-        <!-- Includes links to some third part API's and javaScript-->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-          integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
-          integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
-        <script src="./assets/js/script.js"></script>
+   
+
+    <!-- Includes links to some third part API's and javaScript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+      integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+      <link rel = "stylesheet"
+href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
