@@ -34,7 +34,7 @@ submitButtonEl.addEventListener("click", function (event) {
       console.log(lon);
 
       //Called current days weather details 'openweathermap' by building URL with parameters
-      const weatherUrl = "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&exclude=hourly,daily&appid=" + APIKey + "&units=metric";
+      const weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&exclude=hourly,daily&appid=" + APIKey + "&units=metric";
       console.log(weatherUrl);
 
       fetch(weatherUrl)
@@ -53,7 +53,7 @@ submitButtonEl.addEventListener("click", function (event) {
 
           // Called and displayed weather icon
           const iconcode = data.list[0].weather[0].icon
-          var iconUrl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+          var iconUrl = "https://openweathermap.org/img/w/" + iconcode + ".png";
           $("#weatherIcon").attr("src", iconUrl);
 
           console.log(data);

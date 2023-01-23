@@ -25,9 +25,9 @@ Get weather icon, "ironcode" variable containing pathway to icon field
 - "http://openweathermap.org/img/w/" + iconcode + ".png";
 
 
-## Superhero Smackdown
+## Weather Dashboard
 
-
+https://github.com/NealeAust/Weather-Dashboard/blob/main/LICENSE
 
 
 
