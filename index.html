@@ -13,15 +13,19 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Weather Dashboard</title>
-
 </head>
 
 <body>
-  <!-- Create navbar with heading -->
-  <div class="container-fluid">
-    <nav class="navbar navbar-light" style="background-color:#242490;">
-      <h1 class="header mx-auto">Weather Dashboard</h1>
-    </nav>
+
+  <header>
+    <!-- Create navbar with heading -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-light" style="background-color:#242490;">
+        <h1 class="header mx-auto">Weather Dashboard</h1>
+      </nav>
+  </header>
+
+  <main>
 
     <section>
       <div class="row">
@@ -42,78 +46,88 @@
         <div class="col-8 output">
           <div class="row mt-3" id="container-current-weather">
             <div class="card border border-dark outputBox">
-              <h3 class="cityWeather" id="cityWeather"></h3>
-              <p id="currentDay" class="lead"></p>
-              <h2></h2>
-             <div>
-                <img class="weatherIcon" id="weatherIcon" src="" alt=""></img>
-             </div>
+              <div class="date-icon-box">
+                <h3 class="cityWeather" id="cityWeather"></h3>
+                <p id="currentDay" class="lead"></p>
+                <div>
+                  <h2></h2>
+                </div>
+                <div>
+                  <img class="weatherIcon" id="weatherIcon" src="" alt=""></img>
+                </div>
+              </div>
               <p class="temperature" id="temperature"></p>
               <p class="windSpeed" id="windSpeed"></p>
               <p class="humidity" id="humidity"></p>
 
+
             </div>
           </div>
 
-
-          <!-- Five day forecast -->
+          <!-- Five day weather forecast -->
           <h5 id="forecastTitle">5-Day Forecast:</h5>
           <div id="container-forecast-cards" class="container-forecast-cards d-flex justify-content-between">
-            <div class="cardFc rounded">
-              <p class="dateFc" id="dateFc-1" "></p>
-      <img id=" iconFc-1" src="" alt="">
-              <p class="tempFc" id="tempFc-1"></p>
-              <p class="windFc" id="windFc-1"></p>
-              <p class="humidityFc" id="humidityFc-1"></p>
+
+            <!-- "Fcst" is an abbreviateion for "Forecast"-->
+            <div class="cardFcst rounded">
+              <p class="dateFcst" id="dateFcst-1" "></p>
+              <img id="iconFcst-1" src="" alt="">
+              <p class="tempFcst" id="tempFcst-1"></p>
+              <p class="windFcst" id="windFcst-1"></p>
+              <p class="humidityFcst" id="humidityFcst-1"></p>
             </div>
 
-            <div class="cardFc rounded">
-              <p class="dateFc" id="dateFc-2" "></p>
-      <img id=" iconFc-2" src="" alt="">
-              <p class="tempFc" id="tempFc-2"></p>
-              <p class="windFc" id="windFc-2"></p>
-              <p class="humidityFc" id="humidityFc-2"></p>
+            <div class="cardFcst rounded">
+              <p class="dateFcst" id="dateFcst-2" "></p>
+              <img id="iconFcst-2" src="" alt="">
+              <p class="tempFcst" id="tempFcst-2"></p>
+              <p class="windFcst" id="windFcst-2"></p>
+              <p class="humidityFcst" id="humidityFcst-2"></p>
             </div>
 
-            <div class="cardFc rounded">
-              <p class="dateFc" id="dateFc-3" "></p>
-      <img id=" iconFc-3" src="" alt="">
-              <p class="tempFc" id="tempFc-3"></p>
-              <p class="windFc" id="windFc-3"></p>
-              <p class="humidityFc" id="humidityFc-3"></p>
+            <div class="cardFcst rounded">
+              <p class="dateFcst" id="dateFcst-3" "></p>
+              <img id="iconFcst-3" src="" alt="">
+              <p class="tempFcst" id="tempFcst-3"></p>
+              <p class="windFcst" id="windFcst-3"></p>
+              <p class="humidityFcst" id="humidityFcst-3"></p>
             </div>
 
-            <div class="cardFc rounded">
-              <p class="dateFc" id="dateFc-4" "></p>
-              <img id=" iconFc-4" src="" alt="">
-              <p class="tempFc" id="tempFc-4"></p>
-              <p class="windFc" id="windFc-4"></p>
-              <p class="humidityFc" id="humidityFc-4"></p>
+            <div class="cardFcst rounded">
+              <p class="dateFcst" id="dateFcst-4" "></p>
+              <img id="iconFcst-4" src="" alt="">
+              <p class="tempFcst" id="tempFcst-4"></p>
+              <p class="windFcst" id="windFcst-4"></p>
+              <p class="humidityFcst" id="humidityFcst-4"></p>
             </div>
 
-            <div class="cardFc rounded">
-              <p class="dateFc" id="dateFc-5" "></p>
-              <img id=" iconFcD5" src="" alt="">
-              <p class="tempFc" id="tempFc-5"></p>
-              <p class="windFc" id="windFc-5"></p>
-              <p class="humidityFc" id="humidityFc-5"></p>
-            </div>
+            <div class="cardFcst rounded">
+              <p class="dateFcst" id="dateFcst-5" "></p>
+              <img id="iconFcst-5" src="" alt="">
+              <p class="tempFcst" id="tempFcst-5"></p>
+              <p class="windFcst" id="windFcst-5"></p>
+              <p class="humidityFcst" id="humidityFcst-5"></p>
+           </div>
           </div>
         </div>
       </div>
     </section>
-</body>
 
+  </main>
 
+  <footer>
+    <h6> Web application produced by <span> Neale Chapman </span> © January 2023</h6>
+  </footer>
 
-<!-- Includes links to some third part API's and javaScript-->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-  integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
-  integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="./assets/js/script.js"></script>
+  <!-- Includes links to some third part API's and javaScript-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
