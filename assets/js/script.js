@@ -17,7 +17,7 @@ submitButtonEl.addEventListener("click", function (event) {
 
   // Called latititute(lat) and longitude(lon) for city searched using API
   // Display city name + lat & lon in console.log
-  var geoUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + APIKey;
+  var geoUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + APIKey;
 
   fetch(geoUrl)
     .then(function (response) {
@@ -81,7 +81,7 @@ submitButtonEl.addEventListener("click", function (event) {
             //Get and display weather icon for each day  
             var iconFcst = $("#iconFcst-" + i);
             const iconcodeFcst = data.list[i].weather[0].icon;
-            var iconUrlFcst = "http://openweathermap.org/img/w/" + iconcodeFcst + ".png";
+            var iconUrlFcst = "https://openweathermap.org/img/w/" + iconcodeFcst + ".png";
             iconFcst.attr("src", iconUrlFcst);
 
             // Get and display forecast temp for each day 
