@@ -1,35 +1,40 @@
+/* Class selector */
 .header {
     font-size: 45px;
     color: white;
     text-align: center
 }
 
-
-.search {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 25px;
-   padding: 0px 12px;
-}
-
+/* Input  box for user to enter search name */
 .new-input {
     width: 350px;
     height: 45px;
     font-size: 20px;
 }
 
+/* Search heading   */
+.search {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Search button */
 .btn {
     width: 355px;
     height: 40px;
     background: #5e74d7;
     font-size: 20px;
     font-weight: 500;
-   
+
 }
 
+/* Current date */
+h2 {
+    font-size: 25px;
+    padding: 0px 12px;
+}
+
+/* Box with name of city previously searched */
 .searchHistory {
     width: 350px;
     height: 45px;
@@ -37,10 +42,10 @@ h2 {
     color: black;
     font-size: 20px;
     text-align: center;
-    padding:9px
+    padding: 9px
 }
 
-
+/*  Regarding current day weather details */
 .card {
     width: 100%;
 }
@@ -54,6 +59,7 @@ h2 {
     padding: 10px
 }
 
+/* ID selectors */
 #temperature,
 #windSpeed,
 #humidity {
@@ -62,7 +68,7 @@ h2 {
     font-weight: 700;
 }
 
-
+/* Regarding cards displaying forecast weather details */
 #forecastTitle {
     margin-top: 20px;
     font-size: 25px;
@@ -97,20 +103,21 @@ h2 {
     margin: 20px 2px;
 }
 
-.date-icon-box{
-display: flex;
-align-items: center;
+.date-icon-box {
+    display: flex;
+    align-items: center;
 }
 
-footer{
-margin-top:110px; 
-font-size: 18px;
-color: #5e74d7;
-text-align: center;
-letter-spacing: 1.5;
+/* Footer details */
+footer {
+    margin-top: 110px;
+    font-size: 18px;
+    color: #5e74d7;
+    text-align: center;
+    letter-spacing: 1.5;
 }
-span{
-letter-spacing: 1.9;
-color: #1c1c83;
 
+span {
+    letter-spacing: 1.9;
+    color: #1c1c83;
 }

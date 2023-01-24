@@ -2,6 +2,8 @@
 <html lang="en">
 
 <!-- Includes links to some third part API's -->
+<!-- Container for mandatory information/values/standards/about webpage required for it to run -->
+<!-- Includes some of the links to some of the API's used -->
 
 <head>
   <meta charset="UTF-8" />
@@ -13,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Weather Dashboard</title>
+  <link rel="icon" href="./assets/image/weatherlogo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -26,7 +29,7 @@
   </header>
 
   <main>
-
+    <!-- Create Input box and search button -->
     <section>
       <div class="row">
         <div class="col-3">
@@ -41,8 +44,9 @@
           </div>
           <div class="list-group m-2" id="searchHistory">
           </div>
-
         </div>
+
+        <!-- Create box(container) to output current day weather information as detailed in User Story -->
         <div class="col-8 output">
           <div class="row mt-3" id="container-current-weather">
             <div class="card border border-dark outputBox">
@@ -59,16 +63,17 @@
               <p class="temperature" id="temperature"></p>
               <p class="windSpeed" id="windSpeed"></p>
               <p class="humidity" id="humidity"></p>
-
-
             </div>
           </div>
 
           <!-- Five day weather forecast -->
+          <!-- Card id's and classes to enable styling and displaying of dynamic content 
+               retrieved from Openweathermap API. -->
           <h5 id="forecastTitle">5-Day Forecast:</h5>
           <div id="container-forecast-cards" class="container-forecast-cards d-flex justify-content-between">
 
             <!-- "Fcst" is an abbreviateion for "Forecast"-->
+            <!-- Day 1 -->
             <div class="cardFcst rounded">
               <p class="dateFcst" id="dateFcst-1" "></p>
               <img id="iconFcst-1" src="" alt="">
@@ -77,6 +82,7 @@
               <p class="humidityFcst" id="humidityFcst-1"></p>
             </div>
 
+            <!-- Day 2 -->
             <div class="cardFcst rounded">
               <p class="dateFcst" id="dateFcst-2" "></p>
               <img id="iconFcst-2" src="" alt="">
@@ -85,6 +91,7 @@
               <p class="humidityFcst" id="humidityFcst-2"></p>
             </div>
 
+            <!-- Day 3 -->
             <div class="cardFcst rounded">
               <p class="dateFcst" id="dateFcst-3" "></p>
               <img id="iconFcst-3" src="" alt="">
@@ -93,6 +100,7 @@
               <p class="humidityFcst" id="humidityFcst-3"></p>
             </div>
 
+            <!-- Day 4 -->
             <div class="cardFcst rounded">
               <p class="dateFcst" id="dateFcst-4" "></p>
               <img id="iconFcst-4" src="" alt="">
@@ -101,14 +109,15 @@
               <p class="humidityFcst" id="humidityFcst-4"></p>
             </div>
 
+            <!-- Day 5 -->
             <div class="cardFcst rounded">
               <p class="dateFcst" id="dateFcst-5" "></p>
               <img id="iconFcst-5" src="" alt="">
               <p class="tempFcst" id="tempFcst-5"></p>
               <p class="windFcst" id="windFcst-5"></p>
               <p class="humidityFcst" id="humidityFcst-5"></p>
-           </div>
             </div>
+          </div>
         </div>
       </div>
     </section>

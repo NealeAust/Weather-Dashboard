@@ -33,6 +33,7 @@ submitButtonEl.addEventListener("click", function (event) {
       console.log(lat);
       console.log(lon);
 
+    
       //Called current days weather details 'openweathermap' by building URL with parameters
       const weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&exclude=hourly,daily&appid=" + APIKey + "&units=metric";
       console.log(weatherUrl);
@@ -109,9 +110,7 @@ submitButtonEl.addEventListener("click", function (event) {
          addCity.textContent = lastCity 
          addCity.classList.add("searchHistory")
          document.getElementById("searchHistory").appendChild(addCity)
-         const histButton = document.createElement('button')
-         histButton.addEventListener("click", addCity);
-        
+                
         });
     });
   });
