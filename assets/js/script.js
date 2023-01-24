@@ -67,7 +67,7 @@ submitButtonEl.addEventListener("click", function (event) {
 
           var humidity = $("#humidity");
           humidity.text("Humidity:  " + data.list[0].main.humidity + "  %");
-
+        
           // Five day weather forecast
           // Used for loop to get details for each day
           // "Fcst" is an abbreviation for "Forecast"
@@ -97,20 +97,21 @@ submitButtonEl.addEventListener("click", function (event) {
             humidityFcst.text("Humidity:  " + data.list[i].main.humidity + "  %");
 
           }
-
+    
           //Add name of city searched into local storage
           cityList.push(city)
           localStorage.setItem("listcities", JSON.stringify(cityList))
-
-          // Create and display a search history
-          for (var i = 0; i < cityList.length; i++) {
-            var entry = document.createElement('h5')
-            entry.textContent = cityList[i]
-            entry.classList.add("searchHistory")
-            document.getElementById("searchHistory").appendChild(entry)
-            
-            }
+        
+          // Get last city searched, add to search history and display              
+         var lastCity = cityList.slice(-1) 
+         console.log(lastCity)
+         var addCity = document.createElement('h5')
+         addCity.textContent = lastCity 
+         addCity.classList.add("searchHistory")
+         document.getElementById("searchHistory").appendChild(addCity)
+         const histButton = document.createElement('button')
+         histButton.addEventListener("click", addCity);
         
         });
     });
-});
+  });
